@@ -1,9 +1,11 @@
 package ru.Egor5f421;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 
 public class Main extends JFrame {
+
     /** Этот конструктор создаёт окно
      * @param name Имя программы
      * @param w Ширина окна
@@ -30,7 +32,7 @@ public class Main extends JFrame {
         grid.gridy = 0;
         grid.gridwidth = 2;
         grid.gridheight = 1;
-        panel.add(new JLabel("Hello world!", SwingConstants.CENTER), grid);
+        panel.add(new JLabel(new ImageIcon(new ImageIcon("../resources/pr.jpg").getImage().getScaledInstance(300, 150, 0))), grid);
     }
 
     public static void main(String[] args) {
